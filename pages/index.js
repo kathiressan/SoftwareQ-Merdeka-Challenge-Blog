@@ -18,7 +18,6 @@ export default function Home({ posts }) {
       <Head>
         <title>Kathi's Blog</title>
       </Head>
-
       <div className="relative">
         {/* Header */}
         <Header />
@@ -31,11 +30,10 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const posts = await fetch(
-    "https://softwareq-merdeka-api.azure-api.net/blog/v1/ListAll?softwareq-apim-subscription-key=83e35563f945461db33146d8c43abb2a"
+    `https://softwareq-merdeka-api.azure-api.net/blog/v1/ListAll?softwareq-apim-subscription-key=${process.env.SOFTWAREQ_SECRET_KEY}`
   ).then((res) => res.json());
-
   return {
     props: {
       posts,

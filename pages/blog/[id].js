@@ -34,7 +34,7 @@ export default function Blog({ post }) {
 export async function getServerSideProps(context) {
   const id = context.params.id;
   const post = await fetch(
-    `https://softwareq-merdeka-api.azure-api.net/blog/v1/ById?Id=${id}&softwareq-apim-subscription-key=83e35563f945461db33146d8c43abb2a`
+    `https://softwareq-merdeka-api.azure-api.net/blog/v1/ById?Id=${id}&softwareq-apim-subscription-key=${process.env.SOFTWAREQ_SECRET_KEY}`
   ).then((res) => res.json());
 
   return {
