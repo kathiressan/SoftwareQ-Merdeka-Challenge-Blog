@@ -39,7 +39,11 @@ export const FullPost = ({ post }) => {
           </div>
 
           {/* Bottom part */}
-          <div className="mb-6">{post?.content}</div>
+          <div className="mb-6">
+            {post?.isPublished
+             ? post?.content
+             : "Post has not been published yet"}
+           </div>
 
           <button
             onClick={() => router.push("/")}
