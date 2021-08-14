@@ -1,0 +1,14 @@
+@tailwind components;
+@tailwind base;
+
+@layer components {
+  .icon {
+    @apply h-9 cursor-pointer hover:scale-110 hover:opacity-80;
+  }
+}
+
+@layer base {
+  * {
+    @apply transition duration-200 ease-out;
+  }
+}
