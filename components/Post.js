@@ -51,27 +51,14 @@ export default function Post({
               }/${createdAt.getFullYear()}`}</div>
             </div>
             {/* Center Content */}
-            <div>{content}</div>
+            <div>{isPublished ? 
+            content     
+            :
+            "This post has yet to be published. Contact the author for more information."
+            }</div>
           </div>
         </div>
       </Zoom>
     </div>
   );
-}
-
-// {!isPublished && <LockClosedIcon className="h-8" />}
-
-{
-  /* <div>{`${id}`}</div>
-<div>{title}</div>
-<div>{createdAt}</div>
-<div>{createdAtDateTimeOffset}</div>
-<div>{createdBy}</div>
-<div>{mainAuthor}</div>
-<div>{secondaryAuthor}</div>
-<div>{otherAuthors}</div>
-<div>{content}</div>
-<div>{img}</div>
-<div>{copyrightOwner}</div>
-<div>{isPublished && "isPublished = True"}</div> */
 }
