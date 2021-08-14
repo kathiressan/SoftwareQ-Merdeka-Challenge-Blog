@@ -37,3 +37,4 @@ I have implemented a fully responsive blog with a dark mode feature. The search 
 
 1. If you get an error message on your localhost, check to make sure your internet connection is enabled and stable.
 2. If some styling isn't loading properly, go to `tailwind.config.js` and save the file.
+3. If for whatever reason you are having trouble loading the site using your own server, the live link is [here](https://software-q-merdeka-challenge-blog.vercel.app/).
