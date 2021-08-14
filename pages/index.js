@@ -16,8 +16,7 @@ export default function Home({ posts }) {
       }`}
     >
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Kathi's Blog</title>
       </Head>
 
       <div className="relative">

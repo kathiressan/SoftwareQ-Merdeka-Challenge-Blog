@@ -3,25 +3,31 @@ import Banner from "../../components/Banner";
 import { FullPost } from "../../components/FullPost";
 import Header from "../../components/Header";
 import { selectMode } from "../../slices/darkmodeSlice";
+import Head from "next/head";
 
 export default function Blog({ post }) {
   const getMode = useSelector(selectMode);
   return (
-    <div
-      className={`min-h-screen ${
-        getMode
-          ? "dark bg-[#222222] darkModeTransition"
-          : "light darkModeTransition"
-      }`}
-    >
-      <div className="relative">
-        {/* Header */}
-        <Header />
-        {/* Banner */}
-        <Banner />
+    <>
+      <Head>
+        <title>Kathi's Blog</title>
+      </Head>
+      <div
+        className={`min-h-screen ${
+          getMode
+            ? "dark bg-[#222222] darkModeTransition"
+            : "light darkModeTransition"
+        }`}
+      >
+        <div className="relative">
+          {/* Header */}
+          <Header />
+          {/* Banner */}
+          <Banner />
+        </div>
+        <FullPost post={post} />
       </div>
-      <FullPost post={post} />
-    </div>
+    </>
   );
 }
 

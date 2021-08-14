@@ -1,29 +1,30 @@
-# Next.js + Tailwind CSS Example
+# Kathi's Blog - SoftwareQ Merdeka Challenge
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
-
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
-
-## Preview
-
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+This blog was created for the [SoftwareQ Merdeka Challenge](https://www.softwareq.com/merdeka-challenge/). This blog is live and can be accessed through this [link](https://tailwindcss.com/).
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+1. Download or clone this repository to your pc.
+2. Make sure to have [Node.JS](https://nodejs.org/en/) installed on your pc.
+3. Open up your preferred terminal in the project directory.
+4. Run either one of the following commands, depending if you prefer npm or yarn:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+# NPM
+npm install
+
+# YARN
+yarn install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+5. To start the NextJS server, run the following command:
+
+```bash
+# NPM
+npm run dev
+
+# YARN
+yarn run dev
+```
+
+6. Open up a web browser and go to [http://localhost:3000/](http://localhost:3000/)
