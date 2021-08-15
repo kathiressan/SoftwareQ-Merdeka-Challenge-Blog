@@ -65,7 +65,7 @@ export default function Header() {
         }`}
       >
         <input
-          className={`flex-grow pl-5 bg-transparent outline-none text-sm placeholder-white text-white ${
+          className={`flex-grow pl-5 bg-transparent outline-none active:outline-none text-sm placeholder-white text-white ${
             scrolled && "text-blue-500 placeholder-blue-500"
           }`}
           type="text"
